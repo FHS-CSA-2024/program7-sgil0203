@@ -1,37 +1,34 @@
-# Program 7
+//import stuff here
+import java.util.Scanner; 
+public class program7 {
+    public static void main (String[]args) {
+        int newStanley = 0; 
+        Scanner myScanner = new Scanner(System.in); 
+        System.out.println("Enter Schrute-Bucks: "); 
+        int schrute = myScanner.nextInt(); 
+        System.out.println("Enter Klevins: "); 
+        int klevin = myScanner.nextInt(); 
+        System.out.println("Enter Stanley-Nickels: "); 
+        int oldStanley = myScanner.nextInt(); 
+        final double stanleyInSchrute = 240.0;
+        final double klevinsInSchrute = 20.0; 
+        final double stanleyInKlevin = 12.0; 
+        double answer1 = ((stanleyInKlevin * klevin + oldStanley)/stanleyInSchrute)+schrute;
+        double answerFinal = ((int)((answer1 + 0.005) * 100)) / 100.0;
+        System.out.println("Decimal schrute-bucks: $" + answerFinal);
+        
+    }
+}
+//Your code here
 
-## Program Description:  
->In the heyday of the Dunder Mifflin empire, Scranton used a monetary system based on schrute-bucks, stanley-nickels, and klevins.
->
->There were 20 klevins to a schrute-buck, and 12 stanley-nickels to a klevin.
->
->The notation for this old system used two decimal points, so that, for example, $5.2.8 meant 5 schrute-bucks, 2 klevins and 8 stanley-nickels.
->
->The new monetary system introduced after Kevin was deposed, consists of only schrute-bucks and stanley-nickels, with 100 stanley-nickels to a schrute-buck.  We'll call this new system decimal schrute-buck.
->
->Thus $5.2.8 in the old notation is $5.13 in decimal schrute-bucks (actually $5.1333333).  
+//Paste console output below:
+/*
+Enter Schrute-Bucks: 
+7
+Enter Klevins: 
+17
+Enter Stanley-Nickels: 
+9
+Decimal schrute-bucks: $7.89
 
-- Write a program to convert the old schrute-bucks stanley-nickels klevins format to decimal schrute-bucks.
-  - Use final variables for each conversion rate
-- Choose variable names which are meaningful for this problem.
-
-## Program Data:
-N/A
-
-## Statements Required: 
-- Input
-- Output
-- Variable Assignment
-- Final Variables
-
-## Sample Output:
->Enter schrute-bucks:  7
->
->Enter klevins:  17
->
->Enter stanley-nickels:  9
->
-> ----------------------------
->
->Decimal schrute-bucks = $7.89
-
+*/
