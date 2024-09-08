@@ -1,4 +1,3 @@
-//import stuff here
 import java.util.Scanner; 
 public class program7 {
     public static void main (String[]args) {
@@ -16,8 +15,6 @@ public class program7 {
         double answer1 = ((stanleyInKlevin * klevin + oldStanley)/stanleyInSchrute)+schrute;
         double answerFinal = ((int)((answer1 + 0.005) * 100)) / 100.0;
         System.out.println("Decimal schrute-bucks: $" + answerFinal);
-        
-    }
 }
 //Your code here
 
